@@ -1,0 +1,643 @@
+@import url('https://fonts.cdnfonts.com/css/somar-sans');
+*{
+    font-family: 'Somar Sans', sans-serif;
+
+}
+.dc_header{
+    min-height: 10vh;
+}
+/* text title */
+.text_title {
+    padding: 30px 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_title_main h5 {
+    color: #25BA84;
+}
+.add-cart a{
+    background: transparent;
+     width: 230px;
+     border-radius: 40px;
+         border-radius: 100px;
+    border: 1px solid #25BA84;
+}
+.add-cart {
+
+         border-radius: 100px;
+}
+.add-cart a{
+    background: transparent;
+     width: 230px;
+     border-radius: 40px;
+         border-radius: 100px;
+    border: 1px solid #25BA84;
+}
+
+.text_title_main_2_bg h6 {
+
+    color: #ffff;
+    border-bottom: 2px solid #25BA84; /* جعل البوردر صغير */
+    padding-bottom: 5px; /* إضافة مسافة صغيرة أسفل النص */
+    position: relative; /* لضمان تحريك البوردر عند التفاعل */
+    transition: all 0.3s ease; /* تأثير التحول */
+}
+
+.text_title_main_2_bg h6:hover {
+    border-bottom: 2px solid #25BA84; /* زيادة سماكة البوردر عند التفاعل */
+    width: 100%; /* جعل البوردر يمتد إلى اليمين والشمال */
+}
+
+/* new header */
+@import url('https://fonts.cdnfonts.com/css/somar-sans');
+*{
+    font-family: 'Somar Sans', sans-serif;
+
+}
+    /* Header Styles */
+    .header_c {
+        background: #1e2b3f;
+        padding: 20px 0 0 0 ;
+    }
+    .header_c_container {
+        padding: 0 15%;
+    }
+    .header_c_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header_c_data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .header_c_icons, .header_c_menu {
+        display: flex;
+        align-items: center;
+    }
+    .header_c_icons a i {
+        margin: 0 10px;
+        font-size: 1.2rem;
+        color: white;
+    }
+    .header_c_logo img {
+        width: 120px;
+    }
+    .header_c_menu h3 {
+        color: white;
+        margin: 0 10px 0 0;
+        font-size: 18px;
+    }
+    .header_c_bars a i {
+        font-size: 1.5rem;
+        color: #25BA84;
+    }
+    li {
+        color: white;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background: #1e2b3f;
+        color: white;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        z-index: 9999;
+        padding: 20px;
+    }
+    .sidebar.active {
+        right: 0;
+    }
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .close-sidebar {
+        cursor: pointer;
+        font-size: 28px;
+    }
+    .sidebar-content {
+        margin-top: 20px;
+    }
+    .category {
+        margin-bottom: 20px;
+    }
+    .category-header {
+        cursor: pointer;
+        background: #111924;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #25BA84;
+    }
+    .subcategory-list {
+        display: none;
+        list-style: none;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .subcategory-list li {
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    .arrow {
+        transition: transform 0.3s ease;
+    }
+    .arrow.rotate {
+        transform: rotate(90deg);
+    }
+    /* Overlay */
+    .overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 9998;
+    }
+    .mainer{
+        background: #0d1624;margin:0;padding:0 10%;
+    }
+
+
+
+    .bottom_bar{
+        display: none;
+    }
+    @media screen and (max-width: 1024px) {
+
+        .header_c_logo img {
+            width: 80px;
+        }
+        .header_c_container {
+            padding: 0 10px;
+        }
+        .header_c {
+            padding: 10px 0;
+            border: none;
+        }
+        .vb_banner_container {
+            background-color: #0d1624;
+            padding: 0;
+        }
+        .mainer {
+            padding: 0 0 0 0;
+        }
+
+        /* New styles for the bottom bar */
+        .bottom-bar {
+            border-radius: 20px;
+            position: fixed;
+            bottom: 10px;
+            left: 50%; /* To center the bar */
+            transform: translateX(-50%); /* Adjust the bar to the center */
+            width: 90%; /* Keep the width 90% of the screen */
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        .bottom-bar .icon {
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .bottom-bar .icon-home {
+            position: absolute;
+            right: 0;
+            margin-right: 20px;
+        }
+
+        .bottom-bar .icon-cart,
+        .bottom-bar .icon-categories,
+        .bottom-bar .icon-search,
+        .bottom-bar .icon-user {
+            margin: 0 10px;
+        }
+        .icon a i {
+            color: white;
+        }
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+        }
+        .product-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+            display: flex;justify-content:center;
+            width: 47%;
+        }
+        .product_bg{
+            display: flex;justify-content:center;
+            width: 100%;;
+        }
+        .add-cart a{
+            background: transparent;
+             width: 125px;
+             border-radius: 40px;
+                 border-radius: 100px;
+            border: 1px solid #25BA84;
+        }
+        .add-cart a{
+            width: 125px;
+        }
+            .product-action-1
+            product-action-1{
+                display: none;
+        }
+    }
+    .product-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .product-card {
+        border: 1px solid #78cc8c3d;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        width: 270px;
+        height: 550px; /* تحديد ارتفاع ثابت */
+        transition: all 0.3s ease;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* تنظيم المحتوى داخل البطاقة */
+        justify-content: space-between;
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-image-container {
+        position: relative;
+        height: 250px; /* تحديد ارتفاع ثابت للصورة */
+    }
+
+    .product-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع */
+        transition: all 0.3s ease;
+    }
+
+    .product-image-container:hover .product-image {
+        transform: scale(1.1);
+    }
+
+    .product-actions {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .product-actions button {
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 14px;
+        transition: background 0.3s ease;
+    }
+
+    .product-actions button:hover {
+        background: #f74b4b;
+    }
+
+    .product-badges .badge-new {
+        background-color: #28a745;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    .product-badges .badge-hot {
+        background-color: #f74b4b;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    .product-details {
+        margin-top: 10px;
+    }
+
+    .product-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+        height: 40px; /* تحديد ارتفاع ثابت للعنوان */
+        overflow: hidden;
+    }
+
+    .product-category {
+        font-size: 14px;
+        color: #58ddac;
+        margin-bottom: 10px;
+    }
+
+    .product-price .price {
+        font-size: 18px;
+        font-weight: 700;
+        color: #f74b4b;
+    }
+
+    .product-price .price-discounted {
+        font-size: 18px;
+        font-weight: 700;
+        color: #f74b4b;
+    }
+
+    .product-price .price-original {
+        font-size: 16px;
+        text-decoration: line-through;
+        color: #a3a3a3;
+    }
+
+    .product-footer {
+        margin-top: 15px;
+    }
+
+    .add-to-cart-btn {
+        background-color: transparent;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 30px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: 1px solid #25BA84;
+    }
+
+    .add-to-cart-btn:hover {
+        background-color: #25ba84;
+    }
+
+    .out-of-stock {
+        background-color: #f74b4b;
+        padding: 10px;
+        border-radius: 20px;
+        color: #fff;
+    }
+    .product-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: contain; /* ضمان عرض الصورة بالكامل داخل المربع */
+    }
+    svg {
+        width: 20px;
+    }
+
+    .login-wrapper {
+        max-width: 420px;
+        margin: 80px auto;
+        background-color: #0d1624;
+        border: 1.5px solid #25BA84;
+        border-radius: 16px;
+        padding: 40px 35px;
+        box-shadow: 0 0 20px rgba(37, 186, 132, 0.15);
+        animation: fadeIn 1s ease;
+        position: relative;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .login-logo {
+        text-align: center;
+        margin-bottom: 25px;
+        animation: popIn 0.8s ease;
+    }
+
+    @keyframes popIn {
+        0% { transform: scale(0.8); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    .login-logo img {
+        width: 90px;
+    }
+
+    .login-title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        color: #fff;
+    }
+
+    .input-group {
+        margin-bottom: 22px;
+        transition: all 0.3s ease;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        background-color: #0d1624;
+        border: 1px solid #25BA84;
+        color: #fff;
+        font-size: 15px;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        box-shadow: 0 0 8px #25BA84;
+        transform: scale(1.02);
+    }
+
+    .checkbox-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    .checkbox-wrap input[type="checkbox"] {
+        width: 14px;
+        height: 14px;
+        accent-color: #25BA84;
+        margin-right: 8px;
+        transform: scale(0.9);
+    }
+
+    .checkbox-wrap label {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .forgot-password {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .forgot-password a {
+        font-size: 13px;
+        color: #25BA84;
+        text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+        text-decoration: underline;
+    }
+
+    .login-button {
+        width: 100%;
+        padding: 12px;
+        background-color: #25BA84;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .login-button:hover {
+        background-color: #1a9468;
+        transform: scale(1.01);
+        box-shadow: 0 0 10px rgba(37, 186, 132, 0.5);
+    }
+
+    .message-box {
+        margin-bottom: 15px;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .success-message {
+        color: #25BA84;
+    }
+
+    .error-message ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .error-message li {
+        margin-bottom: 5px;
+        color: #f88;
+    }
+    .products-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center; /* توسيط الكروت */
+        font-family: 'Tajawal', sans-serif;
+        padding: 20px 0;
+    }
+
+    .product-card {
+        width: 160px;
+        height: 220px;
+        border: none; /* إزالة البوردر الأبيض */
+        border-radius: 8px;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .product-card a img {
+        width: 100%;
+        height: 90px;
+        object-fit: contain;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-card .title {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
+        max-height: 135px;
+        overflow: hidden;
+    }
+
+    .product-card .btn {
+        background: none;
+        border: #25BA84 1px solid;
+        border-radius: 20px;
+        font-size: 13px;
+        padding: 3px 0;
+    }
+
+    .product-card .discount-badge {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #dc3545;
+        color: #fff;
+        font-size: 12px;
+        padding: 2px 10px;
+        border-radius: 4px;
+        width: max-content;
+    }
+
+    .product-card .wishlist-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 14px;
+        color: red;
+        background: none;
+        border: none;
+    }
